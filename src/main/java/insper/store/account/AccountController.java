@@ -16,5 +16,11 @@ public interface AccountController {
     @PutMapping("/accounts/{id}")
     public ResponseEntity<AccountOut> update(
         @PathVariable(required = true) String id, 
-        @RequestBody(required = true) AccountIn in);
+        @RequestBody(required = true) AccountIn in
+    );
+
+    @PostMapping("/accounts/login")
+    public ResponseEntity<AccountOut> login(
+        @RequestBody(required = true) Login in
+    );
 }
