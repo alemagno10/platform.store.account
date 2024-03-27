@@ -1,1 +1,1 @@
-# platform_store_account
+# platform.store.account
